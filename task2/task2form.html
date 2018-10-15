@@ -1,0 +1,44 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    <title>task2form</title>
+    <meta charset="utf-8">
+    <link href="task2form.css" rel="stylesheet">
+</head>
+<body>
+    <form class="form" action="http://unknown.com" method="POST" enctype="text/plain">
+        <span class="form__name1">Form Action</span>
+        <span class="form__name2">_mc4wp_action</span>
+        <br><br>This field will allow your visitors to choose whether they would like to subscribe or unsubscribe
+
+        <br><br><label class="form__label">Field Label<br>
+            <input class="form__input form__input_faction" name="formAction" type="text" value="Form Action"></label>
+
+        <br><br><label class="form__label">Choice Type<br>
+        <select class="form__select" name="radioButtons" size="1" multiple>
+            <option>Radio Buttons</option>
+            <option>Test</option>
+        </select></label>       
+
+        <br><br><span class="form__label">Choices</span><br>
+        <div class="form__radioarea">
+            <div class="form__innerradio">
+                <input class="form__input form__innerradio__remover" type="checkbox" name="remover1" id="remover1">                 
+                <input class="form__input" type="radio" name="myRadio" value="Subscribe" checked>
+                <input class="form__input" disabled type="text" value="Subscribe">                
+                <label class="form__label" for="remover1">✖</label>             
+            </div>
+            <div class="form__innerradio">
+                <input class="form__input form__innerradio__remover" type="checkbox" name="remover2" id="remover2">
+                <input class="form__input" type="radio" name="myRadio" value="Unsubscribe">
+                <input class="form__input" disabled type="text" value="Unsubscribe">
+                <label class="form__label" for="remover2">✖</label>                           
+            </div>
+        </div>
+
+        <br><label><input class="form__input" type="checkbox" name="check1" checked>Wrap in paragraph tags?</label>
+        <br><br><input class="form__input form__button" type="button" value="Add to form">
+        <br>
+    </form>    
+</body>
+</html>

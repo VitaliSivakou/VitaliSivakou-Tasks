@@ -1,0 +1,80 @@
+.form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-top: 17px;
+    border: 1px solid lightgray;
+    width: 400px;
+    padding-bottom: 30px;
+}
+.form__name1 {
+    font-weight: bold;
+    font-size: 18px;
+}
+.form__name2 {
+    margin: 8px;
+    padding: 3px;
+    background: lightgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form__label {
+    font-weight: bold;
+}
+.form__input {
+    margin-top: 3px;
+    padding: 3px;
+}
+.form__select {
+    border: 1px solid lightgray;
+    margin-top: 4px;
+    padding: 2px;
+}
+.form__input_faction {
+    border: 1px solid lightgray;
+    width: 96%;
+}
+.form__radioarea .form__input[type="text"] {
+    border: 1px solid lightgray;
+    background: white;
+    width: 85%;
+    margin-bottom: 5px;
+}
+.form__radioarea {
+    border: 1px solid lightgray;
+    width: 95%;
+}
+.form__radioarea .form__input[type="checkbox"]{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    
+}
+.form__innerradio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form__radioarea .form__label{
+    order: 1;
+}
+.form__innerradio__remover:checked + .form__input,
+.form__innerradio__remover:checked + .form__input + .form__input,
+.form__innerradio__remover:checked + .form__input + .form__input + .form__label {
+    display: none;
+}
+.form__button {
+    background-color: rgb(62, 114, 224);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* Первый вариант был неудачным.
+a:visited{
+    order: 2;
+}
+a:visited,a:visited + input,a:visited + input + input{
+    display: none;
+}
+*/
