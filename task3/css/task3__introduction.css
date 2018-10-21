@@ -1,0 +1,63 @@
+.introduction {
+    background-color: #f0e2d7;
+}
+.introduction__quickmenu-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 75%;
+}
+.introduction__quickmenu-link_home {
+    color: #eeca7e;
+}
+.introduction__welcome {    
+    padding-left: 5%; padding-right: 5%;
+    padding-top: 20%;
+    text-transform: uppercase;
+    color: #aeb0b0;
+    font-size: 65%;
+}
+.introduction__iamstimulus {    
+    padding-left: 5%; padding-right: 5%;
+    padding-top: 3%;
+    font-size: 200%;
+}
+.introduction__lorem {    
+    padding-left: 5%; padding-right: 5%;
+    font-size: 85%;
+    padding-top: 3%;
+    color: #aeb0b0;
+    line-height: 1.7;
+}
+.introduction__button-start {
+    margin-top: 6%;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1% 4%;
+    margin-left: 5%; margin-right: 5%;
+    background-color: #f0e2d7;
+    font-weight: bold;
+    font-size: 65%;
+}
+@media only screen and (max-width: 600px) {
+    .page__introduction {padding-bottom: 10%; padding-top: 5%;}
+    .introduction__quickmenu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        border: 2px solid black;
+        background-color: rgba(209, 209, 209, 0.9);
+        border-radius: 4px;
+        font-weight: bold;
+        line-height: 1.7;
+    }
+    .introduction__quickmenu .introduction__quickmenu-menu {display: block;}
+    .introduction__quickmenu .introduction__quickmenu-inner {display: none;}
+    .introduction__quickmenu:hover .introduction__quickmenu-inner{display: flex; flex-direction: column;}
+}
+@media only screen and (min-width: 600px) {
+    .page__introduction {padding-bottom: 5%; padding-top: 2.5%;}
+    .introduction__quickmenu-inner {display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+    .introduction__quickmenu .introduction__quickmenu-menu {display: none;}
+}

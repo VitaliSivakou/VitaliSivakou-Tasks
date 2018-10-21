@@ -1,0 +1,21 @@
+.gibberish {
+    background-color: #ffffff;
+}
+.gibberish__greysmall {    
+    padding-left: 5%; padding-right: 5%;
+    font-size: 85%;
+    padding-top: 3%;
+    color: #aeb0b0;
+    line-height: 1.7;
+}
+.gibberish__title {    
+    padding-left: 5%; padding-right: 5%;
+    padding-top: 3%;
+    font-size: 200%;
+}
+.gibberish__redsmall {
+    padding-left: 5%; padding-right: 5%;
+    font-size: 85%;
+    padding-top: 3%; padding-bottom: 3%;
+    color: #ecbc98;
+}

@@ -1,0 +1,12 @@
+.page__femalehands {
+    background-image: url(./../pics/4.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+    .page__femalehands {padding-bottom: 48%;}
+}
+@media only screen and (min-width: 600px) {
+    .page__femalehands {padding-bottom: 24%;}
+}

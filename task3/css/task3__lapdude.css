@@ -1,0 +1,12 @@
+.page__lapdude {
+    background-image: url(./../pics/6.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+    .page_lapdude {padding-bottom: 48%;}
+}
+@media only screen and (min-width: 600px) { 
+    .page_lapdude {padding-bottom: 24%;}
+}

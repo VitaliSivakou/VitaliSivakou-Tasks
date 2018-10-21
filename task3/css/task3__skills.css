@@ -1,0 +1,58 @@
+.skills {
+    background-color: #e4ae58;
+}
+.skills__title {
+    padding-right: 5%;
+    padding-top: 3%; padding-left: 10%;
+    width: 80%;
+    color: white;
+    font-size: 200%;
+}
+.skills__description {
+    padding-right: 5%;
+    font-size: 85%;
+    padding-top: 3%; padding-left: 10%;
+    width: 80%;
+    color: white;
+}
+.skills__text-skill {
+    font-size: 85%;
+    color: black;
+    text-align: left;
+}
+.skills__text-persentage {
+    font-size: 85%;
+    color: white;
+    text-align: right;
+}
+.skills__progress-area {
+    padding-top: 5%; 
+    padding-left: 10%; padding-right: 5%;
+}
+.skills__progress-textarea {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%; padding-bottom: 3%;
+}
+.skills__progress-bar {
+    background-color: white;
+}
+.skills__progress-fill {
+    background-color: black;
+    height: 4px;
+}
+.skills__progress-fill_frontend {
+    width: 90%;
+}
+.skills__progress-fill_backend {
+    width: 70%;
+}
+.skills__progress-fill_html5 {
+    width: 80%;
+}
+@media only screen and (max-width: 600px) {
+    .page__skills {padding-bottom: 10%; padding-top: 5%;}
+}
+@media only screen and (min-width: 600px) {
+    .page__skills {padding-bottom: 5%; padding-top: 2.5%;}
+}

@@ -1,0 +1,45 @@
+.page__aboutskill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+.aboutskill_interface-design {
+    background-color: #e4ae58;
+}
+.aboutskill_media-strategy {
+    background-color: #e9714c;
+}
+.aboutskill_mobile-app {
+    background-color: #161616;
+}
+.aboutskill_coding {
+    background-color: #ffffff;
+}
+.aboutskill__skill-title {
+    padding-left: 5%; padding-right: 5%;
+    padding-top: 3%;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+}
+.aboutskill__skill-description {
+    padding-left: 5%; padding-right: 5%;
+    font-size: 85%;
+    padding-top: 3%;
+    color: white;
+    text-align: center;
+    line-height: 1.7;
+}
+.aboutskill__skill-title_coding {
+    color: black;
+}
+.aboutskill__skill-description_coding {
+    color: black;
+}
+@media only screen and (max-width: 600px) {
+    .page__aboutskill {padding-bottom: 10%; padding-top: 5%;}
+}
+@media only screen and (min-width: 600px) {
+    .page__aboutskill {padding-bottom: 5%; padding-top: 2.5%;}    
+}

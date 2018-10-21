@@ -1,0 +1,16 @@
+.page__dudepic {    
+    background-image: url(./../pics/1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+    white-space: pre;
+    font-size: 20px;
+    text-shadow: 1px 1px white;
+}
+@media only screen and (max-width: 600px) {
+    .page__dudepic {padding-bottom: 85%; padding-top: 5%;}
+}
+@media only screen and (min-width: 600px) {
+    .page__dudepic {padding-bottom: 45%; padding-top: 2.5%;}
+}

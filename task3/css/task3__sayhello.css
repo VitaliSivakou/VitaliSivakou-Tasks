@@ -1,0 +1,64 @@
+.page__sayhello {
+    background-color: #e9714e;
+}
+.sayhello__description {
+    padding-right: 5%;
+    font-size: 85%;
+    padding-top: 3%; padding-left: 10%;
+    width: 80%;
+    color: white;
+}
+.sayhello__title {
+    padding-right: 5%;
+    padding-top: 3%; padding-left: 10%;
+    width: 80%;
+    color: white;
+    font-size: 200%;
+}
+.sayhello__form {
+    padding-top: 3%; padding-left: 10%;
+}
+.sayhello__forminput {
+    background-color: #e9714e;
+    border: none;
+    width: 75%;
+}
+.sayhello__text-whiteform {
+    font-size: 85%;
+    padding: 0 0 0 0;
+    width: 80%;
+    color: white;
+}
+.sayhello__text-whitearea {
+    font-size: 85%;
+    padding: 0 0 1% 0;
+    width: 80%;
+    color: white;
+}
+.sayhello__formarea {
+    background-color: #e9714e;
+    border: none;
+    width: 89%;
+}
+.sayhello__divider {
+    margin-top: 1%;
+    margin-bottom: 4%;
+    background-color: #e4ae58;
+    height: 2px;
+    width: 90%;
+}
+.sayhello__button-send {
+    margin-top: 2%;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 2% 18%;
+    background-color: white;
+    font-size: 90%;
+}
+@media only screen and (max-width: 600px) {
+    .page__sayhello {padding-bottom: 10%; padding-top: 5%;}
+}
+@media only screen and (min-width: 600px) {
+    .page__sayhello {padding-bottom: 5%; padding-top: 2.5%;}
+}

@@ -1,0 +1,33 @@
+.testimonial {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./../pics/5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+}
+.page__testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    padding-top: 11%;
+}
+.testimonial__quote {
+    padding-left: 5%; padding-right: 5%;
+    padding-top: 1%;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+}
+.testimonial__otherquote {
+    padding-left: 5%; padding-right: 5%;
+    font-size: 85%;
+    padding-top: 3%;
+    color: #aeb0b0;
+    text-align: center;
+    line-height: 1.7;
+}
+.testimonial__iconstar {    
+    margin: auto;
+    padding-bottom: 1%; 
+    filter: invert(100%);
+}

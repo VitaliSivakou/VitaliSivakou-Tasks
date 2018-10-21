@@ -1,0 +1,44 @@
+.visit {
+    background-color: #161616;
+}
+.page__visit {
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+    .page_visit {padding-bottom: 10%; padding-top: 5%;}
+}
+@media only screen and (min-width: 600px) { 
+    .page_visit {padding-bottom: 5%; padding-top: 2.5%;}
+}
+.visit__title {
+    padding-right: 5%;
+    padding-top: 5%; padding-left: 10%; padding-bottom: 2%;
+    color: white;
+    font-size: 130%;
+}
+.visit__plaintext {
+    padding-right: 5%;
+    padding-top: 5%; padding-left: 10%; padding-bottom: 5%;
+    font-size: 75%;
+    color: #5f5f5f;
+    line-height: 1.7;
+}
+.visit__contact-row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%; padding-left: 10%;
+}
+.visit__icon-contact {
+    padding-bottom: 5%;
+    width: auto;
+    height: 15px;
+    margin: 0;   
+    filter: invert(50%);
+}
+.visit__contact-text {
+    padding-left: 5%; padding-right: 5%;
+    font-size: 75%;
+    width: 80%;
+    color: #5f5f5f;
+}

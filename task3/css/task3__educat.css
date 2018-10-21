@@ -1,0 +1,54 @@
+.educat {
+    background-color: #e4ae58;
+}
+.page_educat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.educat__title {
+    padding-right: 5%;
+    padding-top: 3%; padding-left: 10%;
+    width: 80%;
+    color: white;
+    font-size: 200%;
+}
+.educat__description {
+    padding-right: 5%;
+    font-size: 85%;
+    padding-top: 3%; padding-left: 10%;
+    width: 80%;
+    color: white;
+}
+.educat__occupation {
+    width: 85%;
+    padding-top: 5%; 
+    padding-left: 10%; padding-right: 0%;
+}
+.educat__text-occtime {
+    font-size: 85%;
+    font-weight: bold;
+    padding: 0 0 0 0;
+    vertical-align: 75%;
+    color: #866f1e;
+}
+.educat__text-occjob {
+    font-size: 130%;
+    color: white;
+    padding: 0 0 0 3%;
+    vertical-align: 50%;
+}
+.educat__text-occdesc {
+    font-size: 80%;
+    padding: 0 0 0 11%;
+    vertical-align: 75%;
+    color: white;
+}
+.educat__icon {  
+    width: 40px;
+    height: auto;
+    margin-top: 5%;  
+    padding-bottom: 0%;
+    filter: invert(100%);
+}

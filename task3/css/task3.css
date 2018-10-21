@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "FontAwesome";
+    src: url('./../fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+    src: url('./../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./../fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./../fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./../fonts/fontawesome-webfont.svg#svgFontAwesome') format('svg'); /* Legacy iOS */
+}
+.page {
+    max-width: 1480px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    border: 1px solid black;
+    font-family: 'FontAwesome', Arial, Helvetica, sans-serif;
+}
+.page__link {
+    color: #b88c46;
+    text-decoration: none;
+}
+.page__icon {  
+    width: auto;
+    height: 40px;
+    margin: auto;
+    padding-bottom: 5%;
+}
+.page__icon_invert {    
+    filter: invert(100%);
+}
+@media only screen and (max-width: 600px) {
+    .page__rectangle-horiz {padding-bottom: 10%; padding-top: 5%;}
+}
+@media only screen and (min-width: 600px) {
+    .page__rectangle-horiz {padding-bottom: 5%; padding-top: 2.5%;}  
+}
+@media only screen and (max-width: 400px) {
+    .page__square-big {width: 100%;}
+    .page__square-small {width: 100%;}
+    .page__rectangle-big {width: 100%;}
+    .page__rectangle-vert {width: 100%;}
+    .page__rectangle-horiz {width: 100%;}
+}
+@media only screen and (min-width: 400px) {
+    .page__square-big {width: 100%;}
+    .page__square-small {width: 50%;}
+    .page__rectangle-big {width: 100%;}
+    .page__rectangle-vert {width: 50%;}
+    .page__rectangle-horiz {width: 100%;}
+}
+@media only screen and (min-width: 600px) {
+    .page__square-big {width: 50%; max-width: 740px;}
+    .page__square-small {width: 25%; max-width: 370px;}
+    .page__rectangle-big {width: 100%; max-width: 1480px;}
+    .page__rectangle-vert {width: 25%; max-width: 370px;}
+    .page__rectangle-horiz {width: 50%; max-width: 740px;}
+}
