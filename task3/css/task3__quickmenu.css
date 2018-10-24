@@ -1,0 +1,30 @@
+.quickmenu__link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+.quickmenu__link_home {
+    color: #eeca7e;
+}
+@media only screen and (max-width: 600px) {
+    .introduction__quickmenu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+    .quickmenu {
+        background-color: rgba(209, 209, 209, 0.9);
+        font-weight: bold;
+        line-height: 1.7;
+    }
+    .quickmenu .quickmenu__menu {display: block;}
+    .quickmenu .quickmenu__inner {display: none;}
+    .quickmenu:hover .quickmenu__inner {display: flex; flex-direction: column;}
+}
+@media only screen and (min-width: 600px) {
+    .quickmenu__inner {display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+    .quickmenu .quickmenu__menu {display: none;}
+}

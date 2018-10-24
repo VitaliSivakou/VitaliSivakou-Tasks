@@ -6,22 +6,22 @@
     padding-top: 3%; padding-left: 10%;
     width: 80%;
     color: white;
-    font-size: 200%;
+    font-size: 2.00rem;
 }
 .skills__description {
     padding-right: 5%;
-    font-size: 85%;
+    font-size: 0.85rem;
     padding-top: 3%; padding-left: 10%;
     width: 80%;
     color: white;
 }
 .skills__text-skill {
-    font-size: 85%;
+    font-size: 0.85rem;
     color: black;
     text-align: left;
 }
 .skills__text-persentage {
-    font-size: 85%;
+    font-size: 0.85rem;
     color: white;
     text-align: right;
 }

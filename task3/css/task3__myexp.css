@@ -12,11 +12,11 @@
     padding-top: 3%; padding-left: 10%;
     width: 80%;
     color: white;
-    font-size: 200%;
+    font-size: 2.00rem;
 }
 .myexp__description {
     padding-right: 5%;
-    font-size: 85%;
+    font-size: 0.85rem;
     padding-top: 3%; padding-left: 10%;
     width: 80%;
     color: white;
@@ -34,20 +34,20 @@
     padding-left: 10%; padding-right: 0%;
 }
 .myexp__text-occjob {
-    font-size: 130%;
+    font-size: 1.30rem;
     color: white;
     padding: 0 0 0 3%;
     vertical-align: 50%;
 }
 .myexp__text-occtime {
-    font-size: 85%;
+    font-size: 0.85rem;
     font-weight: bold;
     padding: 0 0 0 0;
     vertical-align: 75%;
     color: black;
 }
 .myexp__text-occdesc {
-    font-size: 80%;
+    font-size: 0.80rem;
     padding: 0 0 0 11%;
     vertical-align: 75%;
     color: white;

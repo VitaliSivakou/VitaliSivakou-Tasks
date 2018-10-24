@@ -6,15 +6,16 @@
     <link href="./css/task3.css" rel="stylesheet">
     <link href="./css/task3__aboutskill.css" rel="stylesheet">
     <link href="./css/task3__bookdudepic.css" rel="stylesheet">
-    <link href="./css/task3__copyright-social.css" rel="stylesheet">
     <link href="./css/task3__dudepic.css" rel="stylesheet">
     <link href="./css/task3__educat.css" rel="stylesheet">
     <link href="./css/task3__femalehands.css" rel="stylesheet">
+    <link href="./css/task3__footer.css" rel="stylesheet">
     <link href="./css/task3__gibberish.css" rel="stylesheet">
     <link href="./css/task3__introduction.css" rel="stylesheet">
     <link href="./css/task3__lapdude.css" rel="stylesheet">
     <link href="./css/task3__myexp.css" rel="stylesheet">
-    <link href="./css/task3__phonedude.css" rel="stylesheet">
+    <link href="./css/task3__phonedude.css" rel="stylesheet">    
+    <link href="./css/task3__quickmenu.css" rel="stylesheet">
     <link href="./css/task3__sayhello.css" rel="stylesheet">
     <link href="./css/task3__skills.css" rel="stylesheet">
     <link href="./css/task3__testimonial.css" rel="stylesheet">
@@ -24,17 +25,17 @@
 </head>
 <body>
 <div class="page">
-    <div class="page__square-big page__dudepic" id="home">Stimulus</div>
+    <div class="page__square-big page__dudepic" id="home" title="Guy sitting on a sofa."><div class="page__stimulus-word">Stimulus</div></div>
     
     <div class="page__square-big introduction page__introduction">
-        <div class="introduction__quickmenu">
-            <div class="introduction__quickmenu-menu">MENU</div>
-            <div class="introduction__quickmenu-inner">            
-                <a class="introduction__quickmenu-link introduction__quickmenu-link_home" href="#home">HOME</a>
-                <a class="introduction__quickmenu-link" href="#about">ABOUT ME</a>
-                <a class="introduction__quickmenu-link" href="#exp">EXPERIENCES</a>
-                <a class="introduction__quickmenu-link" href="#testi">TESTIMONIAL</a>
-                <a class="introduction__quickmenu-link" href="#contact">CONTACT</a>
+        <div class="introduction__quickmenu quickmenu">
+            <div class="quickmenu__menu">MENU</div>
+            <div class="quickmenu__inner">            
+                <a class="quickmenu__link quickmenu__link_home" href="#home">HOME</a>
+                <a class="quickmenu__link" href="#about">ABOUT ME</a>
+                <a class="quickmenu__link" href="#exp">EXPERIENCES</a>
+                <a class="quickmenu__link" href="#testi">TESTIMONIAL</a>
+                <a class="quickmenu__link" href="#contact">CONTACT</a>
         </div></div>
         <div class="introduction__welcome">Welcome to my website</div>
         <div class="introduction__iamstimulus">Hello, I am <b>Stimulus</b> currently based in New York city.</div>
@@ -49,7 +50,7 @@
         <div class="gibberish__greysmall">Aliquam eu ultricies ipsum. Sed lectus ligula, mattis non felis vitae, rhoncus auctor magna. Quisque porttitor sapien in finibus aliquam.</div>
     </div>
 
-    <div class="page__square-small page__bookdudepic"></div>
+    <div class="page__square-small page__bookdudepic" title="Guy sitting on a sofa and reading a book."></div>
 
     <div class="page__square-small page__skills skills">
         <div class="skills__title">My Skills</div>
@@ -107,7 +108,7 @@
         <div class="aboutskill__skill-description aboutskill__skill-description_coding">Pellentesque id auctor nibh. Proin ac vestibulum dolor, a interdum lacus. Quisque. </div>
     </div>
 
-    <div class="page__rectangle-horiz page__phonedude"></div>
+    <div class="page__rectangle-horiz page__phonedude" title="Guy checking his smartphone."></div>
 
     <div class="page__rectangle-horiz page__exp myexp" id="exp">
         <div class="myexp__title">My Experiences</div>
@@ -143,9 +144,9 @@
         </div>
     </div>
 
-    <div class="page__rectangle-horiz page__femalehands"></div>
+    <div class="page__rectangle-horiz page__femalehands" title="Female hands, notes and a laptop."></div>
 
-    <div class="page__rectangle-big page__testimonial testimonial" id="testi">
+    <div class="page__rectangle-big page__testimonial testimonial" id="testi" title="Guy writing something with a pen.">
         <i class="fas fa-star fa-2x page__icon testimonial__iconstar"></i>
         <div class="testimonial__quote">Duis placerat nibh nec sem convallis condimentum. Integer molestie scelerisque quam eget interdum. Aenean eu lacinia.</div>
         <div class="testimonial__otherquote">In vitae euismod felis, id vehicula est. Pellentesque sagittis pretium ipsum, ut pulvinar neque.</div>
@@ -168,7 +169,7 @@
         </form>
     </div>
 
-    <div class="page__rectangle-vert page__lapdude"></div>
+    <div class="page__rectangle-vert page__lapdude" title="Guy sitting with a laptop on laps."></div>
 
     <div class="page__rectangle-vert page__visit visit">
         <div class="visit__title">Visit my office</div>
@@ -188,14 +189,14 @@
         </div>
     </div>
 
-    <div class="page__rectangle-big page__copyright-social copyright-social">
-        <div class="copyright-social__copyright">Copyright <span class="copyright-social__copysign">&copy;</span> 2016 Your Company | Design: <a class="copyright-social__templatemo" href="http://templatemo.com/tm-498-stimulus">templatemo</a></div>
-        <div class="copyright-social__social-icons">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f copyright-social__social-icon"></i></a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter copyright-social__social-icon"></i></a>
-            <a href="https://plus.google.com/"><i class="fab fa-google-plus-g copyright-social__social-icon"></i></a>
-            <a href="https://dribbble.com/"><i class="fab fa-dribbble copyright-social__social-icon"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in copyright-social__social-icon"></i></a>
+    <div class="page__rectangle-big page__footer footer">
+        <div class="footer__copyright">Copyright <span class="footer__copysign">&copy;</span> 2016 Your Company | Design: <a class="footer__templatemo" href="http://templatemo.com/tm-498-stimulus">templatemo</a></div>
+        <div class="footer__social-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f footer__social-icon"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter footer__social-icon"></i></a>
+            <a href="https://plus.google.com/"><i class="fab fa-google-plus-g footer__social-icon"></i></a>
+            <a href="https://dribbble.com/"><i class="fab fa-dribbble footer__social-icon"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in footer__social-icon"></i></a>
         </div>
     </div>
 

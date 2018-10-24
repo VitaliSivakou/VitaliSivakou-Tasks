@@ -14,7 +14,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: stretch;
-    border: 1px solid black;
     font-family: 'FontAwesome', Arial, Helvetica, sans-serif;
 }
 .page__link {
@@ -37,13 +36,15 @@
     .page__rectangle-horiz {padding-bottom: 5%; padding-top: 2.5%;}  
 }
 @media only screen and (max-width: 400px) {
+    .page {font-size: 0.8em;}
     .page__square-big {width: 100%;}
     .page__square-small {width: 100%;}
     .page__rectangle-big {width: 100%;}
     .page__rectangle-vert {width: 100%;}
     .page__rectangle-horiz {width: 100%;}
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .page {font-size: 0.9em;}
     .page__square-big {width: 100%;}
     .page__square-small {width: 50%;}
     .page__rectangle-big {width: 100%;}
@@ -51,6 +52,7 @@
     .page__rectangle-horiz {width: 100%;}
 }
 @media only screen and (min-width: 600px) {
+    .page {font-size: 1em;}
     .page__square-big {width: 50%; max-width: 740px;}
     .page__square-small {width: 25%; max-width: 370px;}
     .page__rectangle-big {width: 100%; max-width: 1480px;}

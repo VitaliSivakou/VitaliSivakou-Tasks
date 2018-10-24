@@ -3,10 +3,12 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    text-align: center;
-    white-space: pre;
-    font-size: 20px;
+}
+.page__stimulus-word {
+    text-align: right;
+    font-size: 1.25rem;
     text-shadow: 1px 1px white;
+    width: 40%;
 }
 @media only screen and (max-width: 600px) {
     .page__dudepic {padding-bottom: 85%; padding-top: 5%;}
