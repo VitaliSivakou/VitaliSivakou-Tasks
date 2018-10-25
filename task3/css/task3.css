@@ -9,6 +9,7 @@
 }
 .page {
     max-width: 1480px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
