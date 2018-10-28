@@ -1,0 +1,32 @@
+.funcarea {
+    border: 2px solid black;
+    border-radius: 5px;
+    max-width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.functitle {
+    margin: 1% 1% 0 1%;
+    font-size: 2rem;
+    text-align: center;
+}
+.funcbutton {
+    background-color: lightyellow;
+    border: 1px solid black;
+    padding: 1%;
+    margin: 1% 1% 0 1%;
+    border-radius: 5px;
+}
+.funcbutton:active {
+    background-color: gold;
+}
+.funcresult {   
+    display: block;
+    border: 1px solid black;
+    min-height: 100px;
+    width: 94.5%; 
+    margin: 2% 0 2.5% 0;
+    border-radius: 3px;
+}
