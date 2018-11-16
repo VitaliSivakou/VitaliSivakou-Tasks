@@ -1,15 +1,12 @@
 function displayCalendar(monthChange) {
 
     var htmlContent = "";
-    var FebNumberOfDays = "";
     var counter = 1;
 
     var dateNow = new Date();
-
-    var day = dateNow.getDate();
-    var year = dateNow.getFullYear();
-
-    var month = dateNow.getMonth() + monthChange;
+    var day = arguments[1] || dateNow.getDate();
+    var year = arguments[3] || dateNow.getFullYear();
+    var month = arguments[2] || (dateNow.getMonth() + monthChange);
     while (month > 11) {
         month -= 12;
         ++year;
@@ -20,24 +17,14 @@ function displayCalendar(monthChange) {
     }
     var nextMonth = month + 1;
 
-    // determining if February consists of 28 or 29 days  
-    if (month == 1) {
-        if ((year % 100 != 0) && (year % 4 == 0) || (year % 400 == 0)) {
-            FebNumberOfDays = 29;
-        } else {
-            FebNumberOfDays = 28;
-        }
-    }
-
     // names of months and weekdays
     var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var dayPerMonth = ["31", "" + FebNumberOfDays + "", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
 
     // days in previous month and next one, and day of week
     var nextDate = new Date(nextMonth + ' 1 ,' + year);
     var weekdays = nextDate.getDay();
     var weekdays2 = weekdays;
-    var numOfDays = dayPerMonth[month];
+    var numOfDays = getDaysPerMonth(year, month);
 
     // this leaves a white space for days of previous month
     while (weekdays > 0) {
@@ -87,8 +74,13 @@ function displayCalendar(monthChange) {
         calendar.id = "calendar";
         calendar.innerHTML = calendarBody;
         document.body.appendChild(calendar);
+        var datePicker = document.createElement('div');
+        datePicker.id = "datePicker";
+        datePicker.innerHTML = "<label><br>Input date in DD-MM-YYYY format<br>and press enter to show date.<br><input onkeypress='displayPickedDate()' value=" + day + "-" + (month+1) + "-" + year + "></input></label>";
+        document.body.appendChild(datePicker);
     }
 
+    // set CSS
     var selectors = [".calendar", ".monthPre", ".monthNow", ".dayNow", ".monthName", ".dayNames", ".monthChanger"];
     var styles = [
         "border: 2px solid black;",
@@ -106,6 +98,47 @@ function displayCalendar(monthChange) {
             elements[y].style.cssText = styles[x];
         }
     }
+}
+
+function displayPickedDate() {
+    if (event.charCode == 13) {
+        var dateInput = document.querySelector("#datePicker input").value;
+        var dateArr = ["DD", "MM", "YYYY"];
+        if (dateInput[2] == "-" && dateInput[5] == "-") {
+            dateArr = dateInput.split("-");
+        }
+        var day = Number(dateArr[0]), month = Number(dateArr[1]) - 1, year = Number(dateArr[2]);
+        if (isNumeric(year)) {
+            if (isNumeric(month) && month >= 0 && month <= 11) {
+                if (isNumeric(day) && day >= 0 && day <= getDaysPerMonth(year, month)) {
+                    displayCalendar(0, day, month, year);
+                    return true;
+                }
+            }
+        }
+        return alert("Date input incorrect.");
+    }
+    else {
+        return true;
+    }
+
+}
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+function getDaysPerMonth(year, month) {
+    var FebNumberOfDays = "";
+    if (month == 1) {
+        if ((year % 100 != 0) && (year % 4 == 0) || (year % 400 == 0)) {
+            FebNumberOfDays = 29;
+        } else {
+            FebNumberOfDays = 28;
+        }
+    }
+    var dayPerMonth = ["31", "" + FebNumberOfDays + "", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
+    return dayPerMonth[month];
 }
 
 var monthChange = 0;
