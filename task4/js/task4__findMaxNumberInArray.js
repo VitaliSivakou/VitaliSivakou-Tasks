@@ -1,11 +1,11 @@
 function findMaxNumberInArray(arr) {
-    if (arr.length == 0) {
-        return "Массив пуст!";
-    }
-    var arrMax = +arr[0];
-    for (var i = 1; i < arr.length; i++) {
-        if (arr[i] > arrMax) {
-            arrMax = +arr[i];
+    var arrMax = 0;
+    if (arr.length > 0) {
+        arrMax = Number(arr[0]);
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i] > arrMax) {
+                arrMax = Number(arr[i]);
+            }
         }
     }
     return arrMax;

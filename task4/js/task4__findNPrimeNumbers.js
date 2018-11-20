@@ -3,7 +3,7 @@ function findNPrimeNumbers(n) {
     for (var x = 2; primes.length < n; x++) {
         var isPrime = true;
         for (var y = 2; y < x; y++) {
-            if (!(x % y)) {
+            if ((x % y) == 0) {
                 isPrime = false;
                 break;
             }

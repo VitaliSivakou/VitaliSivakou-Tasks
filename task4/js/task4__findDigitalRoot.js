@@ -1,8 +1,8 @@
 function findDigitalRoot(n) {
     var digRoot = 0;
-    n = String(n);
-    for (var i = 0; i < n.length; i++) {
-        digRoot += Number(n.charAt(i));
+    var strN = String(n);
+    for (var i = 0; i < strN.length; i++) {
+        digRoot += Number(strN.charAt(i));
     }
     return digRoot;
 }
