@@ -1,0 +1,12 @@
+<div>
+    <input type="text" [(ngModel)]="taskDescription">
+    <button (click)="addItem()">Добавить</button>
+    <button (click)="clearItems()">Очистить</button>
+    <div *ngFor="let item of items; let i = index">
+        <todo-list-item 
+            [toDoAction]="item" 
+            [index]="i" 
+            (onRemove)="removeItem($event)">
+        </todo-list-item>
+    </div>
+</div>
