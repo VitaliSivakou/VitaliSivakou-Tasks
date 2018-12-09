@@ -45,7 +45,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['task9/dist']),
         new HtmlWebpackPlugin({
             title: 'Task 9 Webpack Test'
         })

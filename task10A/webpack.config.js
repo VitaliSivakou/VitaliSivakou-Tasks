@@ -70,7 +70,7 @@ module.exports = {
             path.resolve(__dirname, 'task10A/src'),
             {}
         ),
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['task10A/dist']),
         new HtmlWebpackPlugin({
             template: 'task10A/src/index.html'
         }),
