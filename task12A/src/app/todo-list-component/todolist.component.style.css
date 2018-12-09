@@ -1,0 +1,9 @@
+div{
+    font-style: italic;
+}
+button{
+    margin-left: 2%;
+    box-shadow: 1px 1px gray;
+    border-radius: 3px;
+    border: 1px solid black;
+}

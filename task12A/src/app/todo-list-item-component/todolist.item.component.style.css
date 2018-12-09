@@ -1,0 +1,9 @@
+div{
+    max-width: 10%;
+    overflow: hidden;
+}
+button{
+    box-shadow: 1px 1px gray;
+    border-radius: 3px;
+    border: 1px solid black;
+}
